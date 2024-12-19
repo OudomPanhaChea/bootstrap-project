@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>classwork-5-bootstrap</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container py-3">
+        <h4 class="h4 fw-bold text-white">
+          <a href="#" class="navbar-brand">
+            HW4<span class="text-warning">.</span>
+          </a>
+        </h4>
+        <ul class="navbar-nav gap-2 d-none d-lg-flex">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Team</a>
+          </li>
+          <li class="nav-item position-relative">
+            <a href="#" class="nav-link">Dropdown <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown p-0 py-2 position-absolute">
+              <li class="dropdown-item">
+                <a href="#" class="dropdown-link">Dropdown 1</a>
+              </li>
+              <li class="dropdown-item position-relative">
+                <a href="#" class="dropdown-link">Deep Dropdown <i class="bi bi-chevron-right"></i></a>
+                <ul class="sub-dropdown p-0 py-2 position-absolute">
+                  <li class="sub-dropdown-item">
+                    <a href="#" class="sub-dropdown-link">Deep Dropdown 1</a>
+                  </li>
+                  <li class="sub-dropdown-item">
+                    <a href="#" class="sub-dropdown-link">Deep Dropdown 2</a>
+                  </li>
+                  <li class="sub-dropdown-item">
+                    <a href="#" class="sub-dropdown-link">Deep Dropdown 3</a>
+                  </li>
+                  <li class="sub-dropdown-item">
+                    <a href="#" class="sub-dropdown-link">Deep Dropdown 4</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-item">
+                <a href="#" class="dropdown-link">Dropdown 2</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#" class="dropdown-link">Dropdown 3</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#" class="dropdown-link">Dropdown 4</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item ms-3">
+            <button class="btn btn-outline-warning rounded-pill py-2 px-4">
+              <a href="#" class="text-decoration-none text-white">Get Started</a>
+            </button>
+          </li>
+        </ul>
+
+        <input class="navbar-toggler d-none" type="checkbox" id="navbarToggle"/>
+        <label class="fs-3 d-lg-none burger" for="navbarToggle">
+          <i class="bi bi-list text-warning"></i>
+        </label>
+        <div class="offcanvass d-lg-none">
+          <div class="container-fluid">
+            <div class="container d-flex justify-content-end">
+              <label class="cross-label d-lg-none" for="navbarToggle">
+                <i class="bi bi-x-lg text-warning"></i>
+              </label>
+            </div>
+            <div class="offcanvass-content d-lg-none">
+              <div class="d-lg-none" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Team</a>
+                  </li>
+                  <li class="nav-item position-relative">
+                    <a href="#" class="nav-link">Dropdown <i class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown p-0 py-2 position-absolute">
+                      <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">Dropdown 1</a>
+                      </li>
+                      <li class="dropdown-item position-relative">
+                        <a href="#" class="dropdown-link">Deep Dropdown <i class="bi bi-chevron-right"></i></a>
+                        <ul class="sub-dropdown p-0 py-2 position-absolute">
+                          <li class="sub-dropdown-item">
+                            <a href="#" class="sub-dropdown-link">Deep Dropdown 1</a>
+                          </li>
+                          <li class="sub-dropdown-item">
+                            <a href="#" class="sub-dropdown-link">Deep Dropdown 2</a>
+                          </li>
+                          <li class="sub-dropdown-item">
+                            <a href="#" class="sub-dropdown-link">Deep Dropdown 3</a>
+                          </li>
+                          <li class="sub-dropdown-item">
+                            <a href="#" class="sub-dropdown-link">Deep Dropdown 4</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-item">  
+                        <a href="#" class="dropdown-link">Dropdown 2</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">Dropdown 3</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">Dropdown 4</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                  </li>
+                  <li class="nav-item ms-3">
+                    <button class="btn btn-outline-warning rounded-pill py-2 px-4">
+                      <a href="#" class="text-decoration-none text-white">Get Started</a>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    <main class="overflow-hidden">
+      <section class="hero-banner py-5 py-lg-0 pt-lg-5" id="hero-banner">
+        <div class="container-fluid container-sm">
+          <div class="row pt-lg-4">
+            <div
+              class="col-12 col-lg-6 order-1 order-lg-0 text-center text-md-start d-flex"
+            >
+              <div class="m-auto"
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="2000">
+                <h1 class="h1 h-fs-cus fw-bold">
+                  Your new digital experience with HW4
+                </h1>
+                <p class="fs-cus text-white my-4">
+                  We are team of talented designers making websites with
+                  Bootstrap
+                </p>
+                <button class="btn btn-warning rounded-pill fs-6 btn-cus">
+                  Get Started
+                </button>
+              </div>
+            </div>
+            <div class="m-auto col-12 col-md-8 col-lg-6 order-0 order-lg-1">
+              <div class="p-5 p-lg-0"
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="2000">
+                <img class="img-fluid" src="assets/img/hero-img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partner bg-light">
+        <div class="contanier-fluid container-sm">
+          <div class="row g-0">
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="p-5"
+              data-aos="flip-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-shine"
+              data-aos-duration="1000">
+                <img
+                  class="cli-img"
+                  src="assets/img/clients/client-1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="p-5"
+              data-aos="flip-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-shine"
+              data-aos-duration="1000">
+                <img
+                  class="cli-img"
+                  src="assets/img/clients/client-2.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="p-5"
+              data-aos="flip-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-shine"
+              data-aos-duration="1000">
+                <img
+                  class="cli-img"
+                  src="assets/img/clients/client-3.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="p-5"
+              data-aos="flip-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-shine"
+              data-aos-duration="1000">
+                <img
+                  class="cli-img"
+                  src="assets/img/clients/client-4.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="p-5"
+              data-aos="flip-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-shine"
+              data-aos-duration="1000">
+                <img
+                  class="cli-img"
+                  src="assets/img/clients/client-5.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="p-5"
+              data-aos="flip-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-shine"
+              data-aos-duration="1000">
+                <img
+                  class="cli-img"
+                  src="assets/img/clients/client-6.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services py-5">
+        <div class="container-fluid container-sm text-center">
+          <h1 class="h1 ser-txt fw-bold text-uppercase mt-4"
+            data-aos="zoom-in-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-shine"
+            data-aos-duration="800">Services</h1>
+          <div class="assets m-auto my-4"
+            data-aos="zoom-in-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-shine"
+            data-aos-duration="800"></div>
+          <p class="fs-6"
+            data-aos="zoom-in-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-shine"
+            data-aos-duration="800">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+          <div class="row g-4 my-4">
+            <div class="col-12 col-md-6 px-5">
+              <div class="card overflow-hidden d-inline-block border-0 bg-transparent" 
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-shine"
+              data-aos-duration="2000">
+                <img class="card-img-top" src="assets/img/services-1.jpg" alt="">
+                <div class="card-body position-relative">
+                  <div class="card-des text-start p-4 bg-light rounded position-absolute top-0 start-50">
+                    <h4 class="h4 ser-txt fw-semibold py-2 text-center">
+                      Temporibus laudantium
+                    </h4>
+                    <p class="ser-p-txt text-start">
+                      Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                      tempor ut labore et dolore magna aliqua. Ut enim ad minim
+                      veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat
+                    </p>
+                    <a href="#" class="readmore text-decoration-none">
+                      <i class="bi bi-arrow-right ser-p-txt"></i>
+                      <span class="ser-p-txt">Read More</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 px-5">
+              <div class="card 4 overflow-hidden d-inline-block border-0 bg-transparent"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-shine"
+              data-aos-duration="2000">
+                <img class="card-img-top" src="assets/img/services-2.jpg" alt="">
+                <div class="card-body position-relative">
+                  <div class="card-des text-start p-4 bg-light rounded position-absolute top-0 start-50">
+                    <h4 class="h4 ser-txt fw-semibold py-2 text-center">
+                      Temporibus laudantium
+                    </h4>
+                    <p class="ser-p-txt text-start">
+                      Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                      tempor ut labore et dolore magna aliqua. Ut enim ad minim
+                      veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat
+                    </p>
+                    <a href="#" class="readmore text-decoration-none">
+                      <i class="bi bi-arrow-right ser-p-txt"></i>
+                      <span class="ser-p-txt">Read More</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 px-5">
+              <div class="card 4 overflow-hidden d-inline-block border-0 bg-transparent"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-shine"
+              data-aos-duration="2000">
+                <img class="card-img-top" src="assets/img/services-3.jpg" alt="">
+                <div class="card-body position-relative">
+                  <div class="card-des text-start p-4 bg-light rounded position-absolute top-0 start-50">
+                    <h4 class="h4 ser-txt fw-semibold py-2 text-center">
+                      Temporibus laudantium
+                    </h4>
+                    <p class="ser-p-txt text-start">
+                      Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                      tempor ut labore et dolore magna aliqua. Ut enim ad minim
+                      veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat
+                    </p>
+                    <a href="#" class="readmore text-decoration-none">
+                      <i class="bi bi-arrow-right ser-p-txt"></i>
+                      <span class="ser-p-txt">Read More</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 px-5">
+              <div class="card 4 overflow-hidden d-inline-block border-0 bg-transparent"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-shine"
+              data-aos-duration="2000">
+                <img class="card-img-top" src="assets/img/services-4.jpg" alt="">
+                <div class="card-body position-relative">
+                  <div class="card-des text-start p-4 bg-light rounded position-absolute top-0 start-50">
+                    <h4 class="h4 ser-txt fw-semibold py-2 text-center">
+                      Temporibus laudantium
+                    </h4>
+                    <p class="ser-p-txt text-start">
+                      Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                      tempor ut labore et dolore magna aliqua. Ut enim ad minim
+                      veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat
+                    </p>
+                    <a href="#" class="readmore text-decoration-none">
+                      <i class="bi bi-arrow-right ser-p-txt"></i>
+                      <span class="ser-p-txt">Read More</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature py-5">
+        <div class="container-fluid container-sm text-center">
+          <h1 class="h1 ser-txt fw-bold text-uppercase mt-4"
+            data-aos="zoom-in-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-shine"
+            data-aos-duration="800">Features</h1>
+          <div class="assets m-auto my-4"
+            data-aos="zoom-in-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-shine"
+            data-aos-duration="800"></div>
+          <div class="row g-4 my-5">
+            <div class="col-12 col-md-4 col-xl-5 m-auto order-0 order-md-1">
+              <div class="p-4 p-md-0 p-xl-5"
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="2000">
+                <img class="img-fluid" src="assets/img/features-2.svg" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-8 col-xl-7 m-auto order-1 order-md-0">
+              <div class="text-start mt-3 mt-md-0"
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="2000">
+                <h2 class="h2 fw-bold fea-h-txt">Corporis temporibus maiores provident</h4>
+                <p class="fs-6 fea-p-txt fst-italic fw-normal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="fs-6 fea-p-txt">
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 my-5">
+            <div class="col-12 col-md-4 col-xl-5 m-auto order-0">
+              <div class="p-4 p-md-0 p-xl-5"
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="2000">
+                <img class="img-fluid" src="assets/img/features-3.svg" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-8 col-xl-7 m-auto order-1">
+              <div class="text-start mt-3 mt-md-0"
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="2000">
+                <h2 class="h2 fw-bold fea-h-txt">Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h4>
+                <p class="fs-6 fea-p-txt mt-3">
+                  Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.
+                </p>
+                <ul class="list-unstyled list">
+                  <li class="fs-6 fea-p-txt mt-3">
+                    <i class="bi bi-check check"></i>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </li>
+                  <li class="fs-6 fea-p-txt mt-2">
+                    <i class="bi bi-check check"></i>
+                    Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </li>
+                  <li class="fs-6 fea-p-txt mt-2">
+                    <i class="bi bi-check check"></i>
+                    Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 my-5">
+            <div class="col-12 col-md-4 col-xl-5 m-auto order-0 order-md-1">
+              <div class="p-4 p-md-0 p-xl-5"
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="2000">
+                <img class="img-fluid" src="assets/img/features-4.svg" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-8 col-xl-7 m-auto order-1 order-md-0">
+              <div class="text-start mt-3 mt-md-0"
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="2000">
+                <h2 class="h2 fw-bold fea-h-txt">Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h4>
+                <p class="fs-6 fea-p-txt fst-italic fw-normal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="fs-6 fea-p-txt">
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team py-5">
+        <div class="container-fluid container-sm text-center">
+          <h1 class="h1 ser-txt fw-bold text-uppercase mt-4"
+            data-aos="zoom-in-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-shine"
+            data-aos-duration="800">Team</h1>
+          <div class="assets m-auto my-4"
+            data-aos="zoom-in-up"
+            data-aos-offset="50"
+            data-aos-easing="ease-in-shine"
+            data-aos-duration="800"></div>
+          <p class="fs-6"
+            data-aos="zoom-in-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-shine"
+            data-aos-duration="800">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+          <div class="row g-4 my-3">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card border-0"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="800">
+                <img class="card-img-top" src="assets/img/team/team-1.jpg" alt="">
+                <div class="card-body">
+                  <h5 class="team-name">Walter White</h5>
+                  <p class="fst-italic team-txt">Cheif Executive Officer</p>
+                  <div class="social-media">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card border-0"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="1000">
+                <img class="card-img-top" src="assets/img/team/team-2.jpg" alt="">
+                <div class="card-body">
+                  <h5 class="team-name">Sarah Jhinson</h5>
+                  <p class="fst-italic team-txt">Product Manager</p>
+                  <div class="social-media">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card border-0"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="1200">
+                <img class="card-img-top" src="assets/img/team/team-3.jpg" alt="">
+                <div class="card-body">
+                  <h5 class="team-name">William Anderson</h5>
+                  <p class="fst-italic team-txt">CTO</p>
+                  <div class="social-media">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card border-0"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="1400">
+                <img class="card-img-top" src="assets/img/team/team-4.jpg" alt="">
+                <div class="card-body">
+                  <h5 class="team-name">Amanda Jepson</h5>
+                  <p class="fst-italic team-txt">Accountant</p>
+                  <div class="social-media">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+      <section class="contact py-5">
+        <div class="container-fluid container-sm text-center">
+          <h1 class="h1 ser-txt fw-bold text-uppercase mt-4"
+            data-aos="zoom-in-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-shine"
+            data-aos-duration="800">contact</h1>
+          <div class="assets m-auto my-4"
+            data-aos="zoom-in-up"
+            data-aos-offset="50"
+            data-aos-easing="ease-in-shine"
+            data-aos-duration="800"></div>
+          <p class="fs-6"
+            data-aos="zoom-in-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-shine"
+            data-aos-duration="800">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+          <div class="row g-4 my-3">
+            <div class="col-12 col-lg-6">
+              <div class="row g-3">
+                <div class="col-12 col-md-12 order-lg-0">
+                  <div class="bg-light shadow p-4 d-flex flex-column align-items-center justify-content-center"
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-shine"
+                    data-aos-duration="1000">
+                    <div class="con-icon rounded-circle">
+                      <i class="bi bi-geo-alt fs-4"></i>
+                    </div>
+                    <h4 class="h4 con-heading mt-3">Our Address</h4>
+                    <p class="con-txt">A108 Adam Street, New York, NY 535022</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 order-lg-3">
+                  <div class="bg-light shadow p-4 d-flex flex-column align-items-center justify-content-center"
+                    data-aos="fade-up"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-shine"
+                    data-aos-duration="1000">
+                    <div class="con-icon rounded-circle">
+                      <i class="bi bi-envelope fs-4"></i>
+                    </div>
+                    <h4 class="h4 con-heading mt-3">Email Us</h4>
+                    <p class="con-txt">info@example.com <br> contact@example.com</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 order-lg-4">
+                  <div class="bg-light shadow  p-4 d-flex flex-column align-items-center justify-content-center"
+                    data-aos="fade-up"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-shine"
+                    data-aos-duration="1200">
+                    <div class="con-icon rounded-circle">
+                      <i class="bi bi-telephone fs-4"></i>
+                    </div>
+                    <h4 class="h4 con-heading mt-3">Call Us</h4>
+                    <p class="con-txt">+1 5589 55488 55 <br> +1 6678 254445 41</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-1">
+              <div class="bg-light shadow mycard-2 p-4 h-100 d-flex flex-column justify-content-center"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-shine"
+                data-aos-duration="1200">
+                <div class="row g-4">
+                  <div class="col-12 col-md-6">
+                    <form action="">
+                      <input class="w-100 py-2 px-3 fs-6" type="text" placeholder="Your Name">
+                    </form>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <form action="">
+                      <input class="w-100 py-2 px-3 fs-6" type="text" placeholder="Your Email">
+                    </form>
+                  </div>
+                  <div class="col-12">
+                    <form action="">
+                      <input class="w-100 py-2 px-3 fs-6" type="text" placeholder="Subject">
+                    </form>
+                  </div>
+                  <div class="col-12">
+                    <textarea class="w-100 py-2 px-3 fs-6" name="message" id="message" placeholder="Message"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-warning py-2 px-3 fs-6 text-white">Send Message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>       
+      </section>
+
+      <section class="goto-top shadow">
+        <a class="text-white" href="#hero-banner">
+          <i class="bi bi-arrow-up"></i>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p class="fs-6 text-white mt-3">&copy; Copyright 
+        <strong class="fw-bold">HW4</strong>. All Rights Reserved
+      </p>
+    </footer>
+    <!-- aos.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
